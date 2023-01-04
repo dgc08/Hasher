@@ -40,7 +40,7 @@
 
     <!--Creates the deployable jar file  -->
     <target name="jar" depends="compile">
-        <jar destfile="${dist.dir}\jar" basedir="${build.dir}">
+        <jar destfile="build/jar" basedir=".">
             <manifest>
                 <attribute name="Main-Class" value="com.sinthoras39.hasher.Main" />
             </manifest>
