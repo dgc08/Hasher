@@ -21,7 +21,7 @@ class FileMenu{
             });
         }
     };
-    private static JMenuItem aboutItem = new JMenuItem("Über mich") {
+    private static JMenuItem aboutItem = new JMenuItem("Über das Programm") {
         {
             addActionListener(new Author());
         }

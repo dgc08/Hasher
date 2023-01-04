@@ -12,7 +12,9 @@ import java.net.URISyntaxException;
 import java.net.URL;
 
 public class Author implements ActionListener {
-    public static final String website = "https://github.com/dgc08";
+    private static final String website = "https://github.com/dgc08/Hasher";
+    private static final String aboutMsg = "Dieses Programm wurde von Sinthoras39 geschrieben. \nDieses Programm hat ein GitHub Repo: " + website + "\nDort gibt es weitere Updates, Dokumentationen, usw. \n\nSoll die GitHub-Website geöffnet werden?";
+    public static final String version = "0.0.0";
 
     public static void openWebsite() {
 
@@ -35,9 +37,9 @@ public class Author implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         int res = JOptionPane.showConfirmDialog(MainFrame.mainPane,
-                "Dieses Programm wurde von Sinthoras39 geschrieben. \nZum GitHub: " + website + "\nMöchtest du disen Link öffnen?",
-                "Über mich",
-                JOptionPane.YES_NO_CANCEL_OPTION);
+                aboutMsg,
+                "Hasher v" + version,
+                JOptionPane.YES_NO_OPTION);
         if (res == 0) {
             openWebsite();
         }
