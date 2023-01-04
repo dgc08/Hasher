@@ -40,9 +40,9 @@
 
     <!--Creates the deployable jar file  -->
     <target name="jar" depends="compile">
-        <jar destfile="${dist.dir}\de.vogella.build.test.ant.jar" basedir="${build.dir}">
+        <jar destfile="${dist.dir}\jar" basedir="${build.dir}">
             <manifest>
-                <attribute name="Main-Class" value="test.Main" />
+                <attribute name="Main-Class" value="com.sinthoras39.hasher.Main" />
             </manifest>
         </jar>
     </target>
