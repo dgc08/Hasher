@@ -1,2 +1,2 @@
 # Hasher
-German GUI Application to hash files and text written in Java
+German GUI Application for hashing files and text written in Java
